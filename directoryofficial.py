@@ -28,6 +28,11 @@ def rename_directory(old_name, new_name):
 
 def delete_directory(name):
     try:
+        if os.listdir(name):
+            confirm = input(f"Katalog '{name}' zawiera pliki. Czy na pewno chcesz go usunąć? (tak/nie): ")
+            if confirm.lower() != 'tak':
+                print("Usunięcie katalogu zostało anulowane.")
+                return
         shutil.rmtree(name)
         print(f"Katalog '{name}' został usunięty.")
     except FileNotFoundError:
