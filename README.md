@@ -1,4 +1,4 @@
-# directory3.py
+# directoryofficial.py
 
 ## Przegląd
 Ten skrypt jest zaprojektowany do zarządzania i manipulowania katalogami oraz plikami w określonym katalogu. Zapewnia funkcje do listowania, tworzenia, usuwania i wykonywania innych operacji na katalogach i plikach.
